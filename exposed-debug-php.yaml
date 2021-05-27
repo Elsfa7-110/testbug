@@ -1,4 +1,4 @@
-id: exposed-debug-php
+id: rce-debug-php
 
 info:
   name: natshell debug.php RCE
