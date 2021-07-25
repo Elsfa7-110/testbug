@@ -1,7 +1,7 @@
-id: rce-php
+id: rce-symfony
 
 info:
-  name: php rce
+  name: symfony rce
   author: ELSFA7110
   severity: high
   tags: rce
