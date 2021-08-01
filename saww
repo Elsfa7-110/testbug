@@ -1,0 +1,19 @@
+POST /login.asp HTTP/1.1
+Host: 62.189.28.188
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: https://62.189.28.188/login.asp
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 38
+Origin: https://62.189.28.188
+Connection: close
+Cookie: ASPSESSIONIDAESSSACB=LGDFPOGCGGMMPHENGEBNNLFN
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+
+userid=admin&password=admin&mode=Login
